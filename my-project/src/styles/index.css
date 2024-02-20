@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.separator-left::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 24%;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(180, 8%, 52%);
+    border-radius: 100%;
+}
+
+.separator-right::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 32%;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(180, 8%, 52%);
+    border-radius: 100%;
+}
